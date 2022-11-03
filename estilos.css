@@ -26,6 +26,10 @@ ul {
         body{
             background-color:white;
             margin: 0;
+            background-image: url(imagen.png);
+            background-size:cover
+            background-repeat: no-repeat;
+            margin: 2%;
         }
         .cabeza{
             height: 100px;

@@ -1,6 +1,6 @@
 h1{
     text-align: center;
-    color:white;
+    color:black;
     font-family: "Gill Sans", 'Gill Sans MT',
     calibri, 'Trebuchet MS',sans sans-serif;
 }
@@ -15,7 +15,7 @@ ul {
     li{ float:right;}
     li a{
         display: block;
-        color:white;
+        color:black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -24,18 +24,27 @@ ul {
         background-color:gray;}
     
         body{
-            background-color:black;
-            margin: 0;
+            background-color:aliceblue;
+            margin: 2%;
+          
         }
         .cabeza{
             height: 100px;
-            background-color:black;
+            text-decoration: underline;
+            background-image: url(imagen.png);
+            background-size:cover
+            background-repeat: no-repeat;
+            background-color:white;
+           
         }
         .cuerpo{
             height: 400px;
-            background-color:white;
             border-bottom: 0%;
             text-align: center;
+            margin: 3%;
+            background-image: url(slid1.png);
+            background-size:cover;
+            background-repeat: no-repeat;
         }
         .piedepagina{
             height: 100px;
@@ -45,7 +54,7 @@ ul {
             float:left;
         }
         div img{
-        float:right;
+        float:center;
         }
         h2{
             color: white;

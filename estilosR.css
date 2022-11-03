@@ -3,6 +3,7 @@ h1{
     color:white;
     font-family: "Gill Sans", 'Gill Sans MT',
     calibri, 'Trebuchet MS',sans sans-serif;
+    background-color: black;
 }
 ul {
     list-style-type: none;
@@ -15,7 +16,7 @@ ul {
     li{ float:left;}
     li a{
         display: block;
-        color:black;
+        color:white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -24,50 +25,49 @@ ul {
         background-color:gray;}
     
         body{
-            background-color:white;
-            margin: 0;
-            color:black;
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            background-color: black;
            
+            
         }
-        .cabeza{
-            height: 100px;
-            background-color:black;
-        }
-      
-        .piedepagina{
-            height: 100px;
-            background-color:black;
-            border-color:black;
-        }
-        img{
-            float:left;
-        }
-        div img{
-        float:right;
-        }
-        div{
-            text-align:left;
-
-        }
-        h2{
+        /*nos deja especifircar cual de los parrafos queremos personalizar el header y el footer como en este caso.*/
+        .container > div,header,footer{   
+            border-radius: 5px;
+            border: 2px solid black;
+            padding:  20px;
             text-align: center;
-            color:white;
+            background-image: url(imagen.png);
+            background-size:cover
+            background-repeat: no-repeat;
+            
         }
-        footer h2{
-            color:black;
+        .container {
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "sidebar content"
+            "footer footert";
+            grid-template-columns: 9fr 10fr;
+            grid-gap: 10px; 
+            font: 0.9em/1.2 "Times New Roman", Arial, Helvetica;
+            background-image: url(slid1.png);
+            background-size:contain;
+            background-repeat: no-repeat;
+            color: white;
         }
-        div ul{
-            text-align: left;
+        header{
+            grid-area: header;
         }
-      .container{
-        color:white;
-        background-color:black;
-        
-      }
-      div li{
-        color:chartreuse;
-      }
-
-        
-        
-       
+        article{
+            grid-area: content;
+        }
+        aside{
+            grid-area: sidebar;
+        }
+        footer{
+            grid-area: footer; 
+            background-color: white;
+            
+        }

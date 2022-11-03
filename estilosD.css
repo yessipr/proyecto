@@ -54,7 +54,10 @@ ul {
     }
     body{
         background-color:black;
-        margin: 0;
+        margin: 2%;
+        background-image: url(imagen.png);
+            background-size:cover
+            background-repeat: no-repeat;
     }
     a{
         color:chartreuse;
